@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.back {
+    width: 100%;
+    min-height: 100vh;
+    background: #eceaff;
+    /* color: #525253; */
+    color:black;
+   
+
+}
+
+h1{color: #525253;}
+
+main {
+    min-height: 77vh;
+}
+
+nav {
+    background: black;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+nav ul {
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+
+
+    color: #e91e63;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    /* border: 1px solid seagreen; */
+}
+
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+
+.sub-menu-wrap.open-menu {
+
+    max-height: 400px;
+
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.user-info h3 {
+    font-weight: 500;
+}
+
+.user-info img {
+    width: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.sub-menu {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+
+}
+
+.sub-menu-link p {
+    width: 100%;
+}
+
+.sub-menu-link img {
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span {
+
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+:root {
+    --link-color: #ecf0f1;
+    --link-active-color: #e91e63;
+
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: left;
+
+
+
+}
+
+nav a {
+    display: block;
+    padding: 0 16px;
+    transition: color 0.2s;
+    color: var(--link-color);
+    font-size: 18px;
+    line-height: 2;
+    text-decoration: none;
+
+}
+
+nav ul ul li a {
+    color: var(--link-color);
+    font-size: 15px;
+    padding: 0;
+
+
+
+}
+
+nav ul ul li a:focus,
+nav ul ul li a:active {
+    color: var(--link-active-color);
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active,
+nav a:focus:hover,
+nav a:active:hover {
+    color: var(--link-active-color);
+}
+
+nav ul ul {
+    width: 170px;
+    display: none;
+    position: absolute;
+    background: black;
+
+
+    /* padding: 5px 0 5px 0; */
+
+
+}
+
+nav ul ul li {
+    display: list-item;
+    position: relative;
+
+
+
+
+}
+
+nav ul li:focus>ul,
+nav ul li:active>ul {
+    display: inherit;
+}
+
+nav a:focus+ul,
+nav a:active+ul {
+    display: inherit;
+}
+
+
+
+
+
+.container {
+    background-color: rgba(0, 0, 0, 0.196);
+    width: 30vw;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    /*arredondar cantos*/
+    border: 2px solid black;
+    margin-top: 100px;
+
+
+}
+
+input[type=text],
+input[type=password111] {
+
+    /* width: 100%; */
+    /*ocupar 100% do disponivel*/
+    background-color: rgb(112, 128, 144, 0.5);
+    line-height: 1.9em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(112, 128, 144);
+    border-radius: 5px;
+    margin: 5px 0px;
+    /*top right bottom left 5px 0px 5px 0px*/
+    font-family: verdana;
+}
+
+button {
+
+    background-color: rgb(112, 128, 144);
+    padding: 10px 40px;
+    /*espaço entre limite e interior*/
+    border-radius: 5px;
+    color: white;
+    border-width: 0px 2px 2px 0px;
+    margin-top: 10px;
+
+
+}
+
+label:nth-of-type(1) {
+    background-color: silver;
+    width: 100px;
+    display: inline-block;
+    margin-left: 45%;
+
+}
+
+
+.container2 input[type=text] {
+    margin: 0 auto;
+    width: 350px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+.c {
+    
+    margin: 5px auto;
+    width: 60vh;
+    height: 10vh;
+    text-align: center;
+
+}
+
+
+.product {
+
+    /* border: 1px solid black; */
+    /* float: left; */
+    /* width: 700px;   */
+    /* margin: 2rem; */
+
+    /* flex-wrap:wrap;  */
+    /* align-items: start; */
+    /* display: flex; */
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    /* overflow: hidden; */
+    /* border: 1px solid black; */
+    text-align: center;
+    border-radius: 10%; 
+
+
+}
+
+.product img {
+    width: 50%;
+    height: 70%; 
+    
+}
+
+.foto {
+    
+    
+    width: 200px;
+    height: 160px;
+   
+    margin: 0px auto; 
+    
+   
+
+}
+
+.foto img {
+   
+    width: 90%;
+    height: 80%;
+}
+
+
+
+
+.limpar {
+    clear: both;
+}
+
+footer {
+    font-weight: 400;
+    font-style: italic;
+}
+
+#fundo {
+    padding: 20px;
+    text-align: center;
+}
+
+table,
+th,
+tr,
+td {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 5px 15px;
+    text-align: center;
+
+}
+
+#trash {
+    
+    
+    width: 25px;
+    height: 25px;
+
+
+}
+
+
+#Api {
+    
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width:95dvw;
+    margin: 30px 0px;
+    align-items: center;
+    /* row-gap: 3px; */
+    text-align:left;
+    
+
+
+}
+
+.item {
+    /* object-fit: cover;
+    background-size: cover; */
+    width:300px;
+    height: 95%; 
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border: 3px dotted black; 
+    margin: 0px;
+   
+    
+}
+
+
+.listar {
+    border: 1px solid blue;
+    width: 100vw;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    /* align-items: start; */
+    
+}
+
+.detalhe_produto, .detalhe_preco, .detalhe_marca   { text-align: center;  font-style: italic; margin-bottom: 0; }
+
+.detalhe_categoria img{width: 100%;}
+
+
+
+
+.container3 {
+    background-color: rgba(0, 0, 0, 0.196);
+    width: 30vw;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+    
+}
+
+.item2 {
+    /* object-fit: cover;
+    background-size: cover; */
+    width:200px;
+    height: 100%; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    margin: 0px;
+    
+}
+
+.item2 img {
+    width:100%;
+    height:100%;
+}
+
+
+
+#Api2 {
+    
+    background-repeat: no-repeat;
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width:95dvw;
+    margin: 0px;
+    align-items: center;
+    margin: 40px 0px;
+    /* row-gap: 3px; */
+   
+    
+
+
+}
