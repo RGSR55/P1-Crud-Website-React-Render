@@ -32,6 +32,13 @@ This website features robust CRUD functionality that enables an admin to create,
 ### Product listing (all,category,brand) pages
 ![2](https://github.com/user-attachments/assets/377bbdc8-8000-4dee-bda1-ad169684ead4)
 
+### Admin session perform CRUD operations including image attachment on products,categories and brands. 
+![7](https://github.com/user-attachments/assets/b37b7308-679b-4df6-b414-a92c08e45469)
+![8](https://github.com/user-attachments/assets/98c7219d-538a-44f0-9796-bf533be959bb)
+![8a](https://github.com/user-attachments/assets/ee66c953-0c84-4bd0-9fa0-ee2159297c11)
+
+
+
 ### Admin panel with Sales & User Management
 
 ![5](https://github.com/user-attachments/assets/7e3df877-c29e-41ad-90e4-543c91cb2a72)
